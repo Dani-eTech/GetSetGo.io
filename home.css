@@ -1,0 +1,242 @@
+@font-face{
+  font-family: product sans;
+  src: url(../Product\ Sans\ Regular.ttf);
+}
+@font-face{
+  font-family: Gotham;
+  src: url(../Gotham-Book.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: product sans
+  }
+  
+  .top {
+    background-image: url(../Lewis.png);
+    gap: 20px;
+    border-radius: 20px;
+  }
+  
+  nav {
+    background-color: #18181b;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(117, 104, 104, 0.2) 0px 1px 8px 1px;
+  }
+  
+  nav ul.navbar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 20px;
+    color: #9ca3af;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+  }
+  
+  nav ul.navbar li  {
+    transition: ease 0.3s;
+    
+  }
+  
+  nav ul.navbar li:hover {
+    font-size: 20px;
+    color: white;
+  }
+  
+  nav ul.navbar li a {
+    text-decoration: none;
+    color: #9ca3af;
+  }
+  nav ul.navbar li a:hover {
+    text-decoration: none;
+    color: rgb(133, 137, 146);
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  .banner{
+    display: flex;
+    padding: 40px;
+    gap: 40px;  
+    justify-content: center;
+
+  }
+  .banner
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  section h1 {
+    font-family: gotham;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+  }
+  
+  section p {
+    font-family: gotham thin;
+    color: white;
+    padding-top: 0px;
+    font-size: 70px;
+    padding-bottom: 20px;
+  }
+  
+  section button {
+    background-color: #656a72;
+    border-radius: 50px;
+    padding: 20px 30px;
+    border: none;
+  }
+  
+  section button a {
+    text-decoration: none;
+    color: #e2e2e2;
+    font-family: Gotham;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.3s ease;
+  }
+  
+  section button a:hover {
+    font-size: 20px;
+  }
+
+  
+  .news-section {
+    padding: 40px 100px;
+    background-color: #0f0f0f;
+    background-image: url(..);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+  }
+  
+  .news-section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #e2e2e2;
+  }
+  
+  .news-grid {
+    display: flex;
+    gap: 20px;
+  }
+  .every{
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+  }
+  .every h3 a{
+    color: white;
+    text-decoration: none;
+  }
+  .every h3 a:hover{
+    transition: 0.3s ease;
+    color: #b1b1b1;
+    text-decoration: none;
+  }
+  
+  .news-grid-caption{
+
+  }
+  
+  .news-card {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .news-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    z-index: 0;
+  }
+  
+  .news-card * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .news-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: gotham;
+  }
+  
+  .news-card p {
+    font-size: 14px;
+    font-family: gotham thin;
+  }
+  
+  footer {
+    background-color: #18181b;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .terms {
+    display: flex;
+    padding-left: 40px;
+  }
+  
+  .terms a {
+    display: flex;
+    padding-left: 40px;
+    color: #9ca3af;
+    font-family: Product Sans;
+  }
+  
+  .captionLeft {
+    display: flex;
+    padding-left: 100px;
+    font-family: Product Sans;
+    color: #9ca3af;
+  }
+  
+  .socials {
+    display: flex;
+    padding-right: 100px;
+    padding-top: 15px;
+  }
+  
+  .socials a {
+    display: flex;
+    padding-left: 30px;
+    font-family: Product Sans;
+  }
+  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dani's F1 Blog</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <div class="top">
+    <nav>
+      <ul class="navbar">
+        <li class="logo"><a href="index.html"><img src="Dani’s F1  Blog.png" height="50px" alt="Logo"></a></li>
+        <li><img src="Rectangle 1.png" height="50px" width="2px" alt="Divider"></li>
+        <li><a href="#" onclick="scrollToNews()">News</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="https://www.formula1.com/en/results/2025/drivers">F1 Standings</a></li>
+        <li><a href="https://www.formula1.com/en/racing/2025">F1 Schedule</a></li>
+      </ul>
+    </nav>
+    <div class="banner">
+    <section>
+      <h1>The Home of Late brakers, Risk Takers <br>and History Makers</h1>
+      <p>This is F1</p>
+      <button><a href="https://www.formula1.com/en/page/what-is-f1">Click To know More</a></button>
+    </section>
+  </div>
+</div>
+
+<section class="every" >
+  <section class="news-section">
+    <div class="news-grid-caption">
+    <h2>In the news</h2>
+  </div>
+    <div class="news-grid" id="news">
+      <div class="news-card" style="background-image: url('lando.png');">
+        <h3><a href="news1.html">Lando takes pole at the Monaco GP!</a></h3>
+        <p>Amazing quali as Lando snatches pole from Leclerc...</p>
+      </div>
+      <div class="news-card" style="background-image: url('max.jpg');">
+        <h3><a href="news2.html">Max wins yet again!</a></h3>
+        <p>A dominant performance from Red Bull's star driver...</p>
+      </div>
+      <div class="news-card" style="background-image: url('leclerc.jpg');">
+        <h3><a href="news3.html">Leclerc's heartbreak at home</a></h3>
+        <p>A pitstop disaster ruins Charles' podium dreams in Monaco...</p>
+      </div>
+    </div>
+  </section>
+</section>
+
+  <footer>
+    <div class="captionLeft">
+      <div class="caption">
+        <p>© 2025 GetSet Go Limited. All Rights Reserved</p>
+      </div>
+      <div class="terms">
+        <p><a href="#">Terms and conditions</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+    <div class="socials">
+      <a href="#"><img src="instagram.png" height="20px" width="auto" /></a>
+      <a href="#"><img src="twitter.png" height="20px" width="auto" /></a>
+      <a href="#"><img src="tik-tok.png" height="20px" width="auto" /></a>
+      <a href="#"><img src="pinterest-logo.png" height="20px" width="auto" /></a>
+    </div>
+  </footer>
+  <script>
+    function scrollToNews() {
+      const newsSection = document.getElementById('news');
+      if (newsSection) {
+        newsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+
+</html>
